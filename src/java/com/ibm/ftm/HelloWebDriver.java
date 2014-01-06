@@ -58,5 +58,6 @@ public class HelloWebDriver {
         }
         logger.debug("Test Completed.");
 
+        driver.quit();
   }
 }

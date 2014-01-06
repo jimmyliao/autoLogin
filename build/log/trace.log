@@ -1938,3 +1938,770 @@
 92846 [Forwarding isElementDisplayed on session 2402e099-fcef-c448-b067-bb77450ad0c5 to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
 92846 [main] DEBUG ftm.HelloWebDriver  - User is logged in.
 92846 [main] DEBUG ftm.HelloWebDriver  - Test Completed.
+0 [main] DEBUG ftm.HelloWebDriver  - Log4j appender configuration is successful !!
+9526 [Forwarding newSession on session null to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+9528 [Forwarding newSession on session null to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+9528 [Forwarding newSession on session null to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+9528 [Forwarding newSession on session null to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+9529 [Forwarding newSession on session null to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+9548 [Forwarding newSession on session null to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+9589 [Forwarding newSession on session null to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+9605 [Forwarding newSession on session null to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+9606 [Forwarding newSession on session null to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+9608 [Forwarding newSession on session null to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+9615 [Forwarding newSession on session null to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+9636 [Forwarding newSession on session null to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session HTTP/1.1
+9637 [Forwarding newSession on session null to remote] DEBUG http.wire  -  >> "POST /hub/session HTTP/1.1[\r][\n]"
+9638 [Forwarding newSession on session null to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+9638 [Forwarding newSession on session null to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+9638 [Forwarding newSession on session null to remote] DEBUG http.wire  -  >> "Content-Length: 105[\r][\n]"
+9639 [Forwarding newSession on session null to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+9639 [Forwarding newSession on session null to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+9639 [Forwarding newSession on session null to remote] DEBUG http.wire  -  >> "[\r][\n]"
+9639 [Forwarding newSession on session null to remote] DEBUG http.headers  - >> POST /hub/session HTTP/1.1
+9639 [Forwarding newSession on session null to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+9639 [Forwarding newSession on session null to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+9639 [Forwarding newSession on session null to remote] DEBUG http.headers  - >> Content-Length: 105
+9639 [Forwarding newSession on session null to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+9640 [Forwarding newSession on session null to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+9640 [Forwarding newSession on session null to remote] DEBUG http.wire  -  >> "{"desiredCapabilities":{"platform":"ANY","browserName":"firefox","version":""},"requiredCapabilities":{}}"
+9728 [Forwarding newSession on session null to remote] DEBUG http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+9730 [Forwarding newSession on session null to remote] DEBUG http.wire  -  << "content-type: application/json; charset=UTF-8[\r][\n]"
+9730 [Forwarding newSession on session null to remote] DEBUG http.wire  -  << "connection: close[\r][\n]"
+9731 [Forwarding newSession on session null to remote] DEBUG http.wire  -  << "content-length: 454[\r][\n]"
+9731 [Forwarding newSession on session null to remote] DEBUG http.wire  -  << "server: httpd.js[\r][\n]"
+9731 [Forwarding newSession on session null to remote] DEBUG http.wire  -  << "date: Mon, 06 Jan 2014 15:37:00 GMT[\r][\n]"
+9731 [Forwarding newSession on session null to remote] DEBUG http.wire  -  << "[\r][\n]"
+9732 [Forwarding newSession on session null to remote] DEBUG conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+9732 [Forwarding newSession on session null to remote] DEBUG http.headers  - << HTTP/1.1 200 OK
+9732 [Forwarding newSession on session null to remote] DEBUG http.headers  - << content-type: application/json; charset=UTF-8
+9732 [Forwarding newSession on session null to remote] DEBUG http.headers  - << connection: close
+9732 [Forwarding newSession on session null to remote] DEBUG http.headers  - << content-length: 454
+9732 [Forwarding newSession on session null to remote] DEBUG http.headers  - << server: httpd.js
+9732 [Forwarding newSession on session null to remote] DEBUG http.headers  - << date: Mon, 06 Jan 2014 15:37:00 GMT
+9754 [Forwarding newSession on session null to remote] DEBUG http.wire  -  << "{"name":"newSession","sessionId":"75211e6b-fbe2-8f4a-b989-ee9853681786","status":0,"value":{"cssSelectorsEnabled":true,"browserName":"firefox","handlesAlerts":true,"javascriptEnabled":true,"nativeEvents":false,"platform":"Darwin","rotatable":false,"takesScreenshot":true,"version":"24.2.0","webStorageEnabled":true,"applicationCacheEnabled":true,"databaseEnabled":true,"locationContextEnabled":true,"browserConnectionEnabled":true,"acceptSslCerts":true}}"
+9755 [Forwarding newSession on session null to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64054<->127.0.0.1:7055 shut down
+9755 [Forwarding newSession on session null to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+9755 [Forwarding newSession on session null to remote] DEBUG tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7055][null]
+9755 [Forwarding newSession on session null to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64054<->127.0.0.1:7055 closed
+9755 [Forwarding newSession on session null to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+9769 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+9769 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+9769 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+9769 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+9769 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+9770 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+9771 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+9772 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+9772 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+9772 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+9775 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+9775 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/url HTTP/1.1
+9776 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/url HTTP/1.1[\r][\n]"
+9776 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+9776 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+9776 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Content-Length: 41[\r][\n]"
+9776 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+9776 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+9776 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "[\r][\n]"
+9776 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/url HTTP/1.1
+9776 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+9776 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+9777 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Content-Length: 41
+9777 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+9777 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+9777 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "{"url":"https://9.191.66.147:9443/admin"}"
+19119 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+19120 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "content-type: application/json; charset=UTF-8[\r][\n]"
+19120 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "connection: close[\r][\n]"
+19120 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "content-length: 87[\r][\n]"
+19120 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "server: httpd.js[\r][\n]"
+19120 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "date: Mon, 06 Jan 2014 15:37:10 GMT[\r][\n]"
+19120 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "[\r][\n]"
+19121 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+19121 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << HTTP/1.1 200 OK
+19121 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << content-type: application/json; charset=UTF-8
+19122 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << connection: close
+19122 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << content-length: 87
+19122 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << server: httpd.js
+19122 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << date: Mon, 06 Jan 2014 15:37:10 GMT
+19123 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "{"name":"get","sessionId":"75211e6b-fbe2-8f4a-b989-ee9853681786","status":0,"value":""}"
+19123 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64055<->127.0.0.1:7055 shut down
+19123 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+19123 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7055][null]
+19123 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64055<->127.0.0.1:7055 closed
+19124 [Forwarding get on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+19124 [main] DEBUG ftm.HelloWebDriver  - Trying to open CPS admin login page !!
+19133 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+19133 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+19133 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+19133 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+19133 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+19135 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+19136 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+19136 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+19137 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+19137 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+19137 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+19137 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element HTTP/1.1
+19137 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element HTTP/1.1[\r][\n]"
+19137 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+19137 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+19137 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Content-Length: 37[\r][\n]"
+19137 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+19138 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+19138 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "[\r][\n]"
+19138 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element HTTP/1.1
+19138 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+19138 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+19138 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Content-Length: 37
+19138 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+19138 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+19138 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "{"using":"name","value":"j_username"}"
+19212 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+19212 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "content-type: application/json; charset=UTF-8[\r][\n]"
+19213 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "connection: close[\r][\n]"
+19213 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "content-length: 145[\r][\n]"
+19213 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "server: httpd.js[\r][\n]"
+19213 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "date: Mon, 06 Jan 2014 15:37:10 GMT[\r][\n]"
+19213 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "[\r][\n]"
+19215 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+19215 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << HTTP/1.1 200 OK
+19216 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << content-type: application/json; charset=UTF-8
+19216 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << connection: close
+19216 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << content-length: 145
+19216 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << server: httpd.js
+19216 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << date: Mon, 06 Jan 2014 15:37:10 GMT
+19217 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "{"name":"findElement","sessionId":"75211e6b-fbe2-8f4a-b989-ee9853681786","status":0,"value":{"ELEMENT":"{4cb2fde6-3a9f-4249-9fe1-980d2d9af40a}"}}"
+19217 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64062<->127.0.0.1:7055 shut down
+19217 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+19217 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7055][null]
+19217 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64062<->127.0.0.1:7055 closed
+19217 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+19227 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+19227 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+19228 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+19228 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+19228 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+19229 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+19230 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+19231 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+19231 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+19231 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+19231 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+19231 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element HTTP/1.1
+19231 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element HTTP/1.1[\r][\n]"
+19231 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+19231 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+19231 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Content-Length: 37[\r][\n]"
+19231 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+19232 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+19232 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "[\r][\n]"
+19232 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element HTTP/1.1
+19232 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+19232 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+19232 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Content-Length: 37
+19232 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+19232 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+19232 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "{"using":"name","value":"j_password"}"
+19242 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+19242 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "content-type: application/json; charset=UTF-8[\r][\n]"
+19242 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "connection: close[\r][\n]"
+19244 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "content-length: 145[\r][\n]"
+19244 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "server: httpd.js[\r][\n]"
+19244 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "date: Mon, 06 Jan 2014 15:37:10 GMT[\r][\n]"
+19245 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "[\r][\n]"
+19246 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+19246 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << HTTP/1.1 200 OK
+19247 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << content-type: application/json; charset=UTF-8
+19248 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << connection: close
+19249 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << content-length: 145
+19249 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << server: httpd.js
+19249 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << date: Mon, 06 Jan 2014 15:37:10 GMT
+19249 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "{"name":"findElement","sessionId":"75211e6b-fbe2-8f4a-b989-ee9853681786","status":0,"value":{"ELEMENT":"{3124bfd2-52c4-2043-8500-65809c5e854a}"}}"
+19249 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64063<->127.0.0.1:7055 shut down
+19249 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+19250 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7055][null]
+19250 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64063<->127.0.0.1:7055 closed
+19250 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+19252 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+19252 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+19252 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+19252 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+19252 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+19253 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+19254 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+19254 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+19254 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+19254 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+19254 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+19254 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element HTTP/1.1
+19255 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element HTTP/1.1[\r][\n]"
+19255 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+19255 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+19255 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Content-Length: 32[\r][\n]"
+19255 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+19255 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+19255 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "[\r][\n]"
+19255 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element HTTP/1.1
+19256 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+19256 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+19256 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Content-Length: 32
+19257 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+19257 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+19257 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "{"using":"name","value":"login"}"
+19271 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+19271 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "content-type: application/json; charset=UTF-8[\r][\n]"
+19272 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "connection: close[\r][\n]"
+19272 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "content-length: 145[\r][\n]"
+19273 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "server: httpd.js[\r][\n]"
+19273 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "date: Mon, 06 Jan 2014 15:37:10 GMT[\r][\n]"
+19273 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "[\r][\n]"
+19273 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+19274 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << HTTP/1.1 200 OK
+19274 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << content-type: application/json; charset=UTF-8
+19274 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << connection: close
+19274 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << content-length: 145
+19274 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << server: httpd.js
+19274 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << date: Mon, 06 Jan 2014 15:37:10 GMT
+19274 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "{"name":"findElement","sessionId":"75211e6b-fbe2-8f4a-b989-ee9853681786","status":0,"value":{"ELEMENT":"{0026a61d-50a8-f34a-b6a9-9996592e075e}"}}"
+19275 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64064<->127.0.0.1:7055 shut down
+19275 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+19275 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7055][null]
+19275 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64064<->127.0.0.1:7055 closed
+19275 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+19279 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+19280 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+19280 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+19280 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+19280 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+19280 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+19282 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+19283 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+19283 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+19283 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+19283 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+19283 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element/%7B4cb2fde6-3a9f-4249-9fe1-980d2d9af40a%7D/value HTTP/1.1
+19283 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element/%7B4cb2fde6-3a9f-4249-9fe1-980d2d9af40a%7D/value HTTP/1.1[\r][\n]"
+19283 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+19284 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+19284 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Content-Length: 68[\r][\n]"
+19284 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+19284 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+19284 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "[\r][\n]"
+19284 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element/%7B4cb2fde6-3a9f-4249-9fe1-980d2d9af40a%7D/value HTTP/1.1
+19284 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+19284 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+19284 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Content-Length: 68
+19284 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+19284 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+19285 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "{"id":"{4cb2fde6-3a9f-4249-9fe1-980d2d9af40a}","value":["izhadmin"]}"
+19337 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+19337 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "content-type: application/json; charset=UTF-8[\r][\n]"
+19338 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "connection: close[\r][\n]"
+19338 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "content-length: 101[\r][\n]"
+19338 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "server: httpd.js[\r][\n]"
+19338 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "date: Mon, 06 Jan 2014 15:37:10 GMT[\r][\n]"
+19338 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "[\r][\n]"
+19338 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+19339 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << HTTP/1.1 200 OK
+19339 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << content-type: application/json; charset=UTF-8
+19340 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << connection: close
+19340 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << content-length: 101
+19340 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << server: httpd.js
+19340 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << date: Mon, 06 Jan 2014 15:37:10 GMT
+19340 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "{"name":"sendKeysToElement","sessionId":"75211e6b-fbe2-8f4a-b989-ee9853681786","status":0,"value":""}"
+19341 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64065<->127.0.0.1:7055 shut down
+19341 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+19341 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7055][null]
+19341 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64065<->127.0.0.1:7055 closed
+19341 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+19342 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+19342 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+19343 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+19343 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+19343 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+19343 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+19346 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+19346 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+19346 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+19346 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+19346 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+19346 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element/%7B3124bfd2-52c4-2043-8500-65809c5e854a%7D/value HTTP/1.1
+19347 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element/%7B3124bfd2-52c4-2043-8500-65809c5e854a%7D/value HTTP/1.1[\r][\n]"
+19347 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+19347 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+19347 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Content-Length: 68[\r][\n]"
+19347 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+19347 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+19347 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "[\r][\n]"
+19347 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element/%7B3124bfd2-52c4-2043-8500-65809c5e854a%7D/value HTTP/1.1
+19347 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+19347 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+19347 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Content-Length: 68
+19347 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+19348 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+19348 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "{"id":"{3124bfd2-52c4-2043-8500-65809c5e854a}","value":["wb1forfn"]}"
+19399 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+19399 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "content-type: application/json; charset=UTF-8[\r][\n]"
+19399 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "connection: close[\r][\n]"
+19399 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "content-length: 101[\r][\n]"
+19400 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "server: httpd.js[\r][\n]"
+19400 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "date: Mon, 06 Jan 2014 15:37:10 GMT[\r][\n]"
+19400 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "[\r][\n]"
+19400 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+19400 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << HTTP/1.1 200 OK
+19400 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << content-type: application/json; charset=UTF-8
+19400 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << connection: close
+19400 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << content-length: 101
+19400 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << server: httpd.js
+19400 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << date: Mon, 06 Jan 2014 15:37:10 GMT
+19401 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "{"name":"sendKeysToElement","sessionId":"75211e6b-fbe2-8f4a-b989-ee9853681786","status":0,"value":""}"
+19403 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64066<->127.0.0.1:7055 shut down
+19403 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+19403 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7055][null]
+19403 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64066<->127.0.0.1:7055 closed
+19403 [Forwarding sendKeysToElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+19405 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+19406 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+19406 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+19406 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+19406 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+19406 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+19409 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+19410 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+19410 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+19410 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+19410 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+19410 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element/%7B0026a61d-50a8-f34a-b6a9-9996592e075e%7D/submit HTTP/1.1
+19410 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element/%7B0026a61d-50a8-f34a-b6a9-9996592e075e%7D/submit HTTP/1.1[\r][\n]"
+19411 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+19411 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+19411 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Content-Length: 47[\r][\n]"
+19412 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+19412 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+19412 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "[\r][\n]"
+19413 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element/%7B0026a61d-50a8-f34a-b6a9-9996592e075e%7D/submit HTTP/1.1
+19413 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+19413 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+19413 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Content-Length: 47
+19413 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+19413 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+19413 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "{"id":"{0026a61d-50a8-f34a-b6a9-9996592e075e}"}"
+81246 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+81248 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "content-type: application/json; charset=UTF-8[\r][\n]"
+81248 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "connection: close[\r][\n]"
+81248 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "content-length: 315[\r][\n]"
+81248 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "server: httpd.js[\r][\n]"
+81248 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "date: Mon, 06 Jan 2014 15:38:12 GMT[\r][\n]"
+81249 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "[\r][\n]"
+81249 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+81249 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << HTTP/1.1 200 OK
+81249 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << content-type: application/json; charset=UTF-8
+81249 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << connection: close
+81249 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << content-length: 315
+81249 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << server: httpd.js
+81249 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << date: Mon, 06 Jan 2014 15:38:12 GMT
+81658 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "{"name":"submitElement","sessionId":"75211e6b-fbe2-8f4a-b989-ee9853681786","status":0,"value":"A script on this page may be busy, or it may have stopped responding. You can stop the script now, or you can continue to see if the script will complete.\n\nScript: https://9.191.66.147:9443/admin/dojo/dojo/dojo.js:15"}"
+81658 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64067<->127.0.0.1:7055 shut down
+81658 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+81658 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7055][null]
+81658 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64067<->127.0.0.1:7055 closed
+81659 [Forwarding submitElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+81659 [main] DEBUG ftm.HelloWebDriver  - User is trying to logging in...
+81660 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+81660 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+81661 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+81661 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+81661 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+81661 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+81663 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+81663 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+81663 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+81663 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+81663 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+81663 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element HTTP/1.1
+81664 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element HTTP/1.1[\r][\n]"
+81664 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+81664 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+81664 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Content-Length: 43[\r][\n]"
+81664 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+81664 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+81664 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "[\r][\n]"
+81664 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> POST /hub/session/75211e6b-fbe2-8f4a-b989-ee9853681786/element HTTP/1.1
+81664 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+81665 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+81665 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Content-Length: 43
+81665 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+81665 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+81665 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  >> "{"using":"id","value":"ftm-banner-welcome"}"
+81982 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "HTTP/1.1 500 Internal Server Error[\r][\n]"
+81982 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "content-type: application/json; charset=UTF-8[\r][\n]"
+81982 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "connection: close[\r][\n]"
+81982 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "content-length: 3043[\r][\n]"
+81982 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "server: httpd.js[\r][\n]"
+81983 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "date: Mon, 06 Jan 2014 15:38:12 GMT[\r][\n]"
+81983 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "[\r][\n]"
+81983 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Receiving response: HTTP/1.1 500 Internal Server Error
+81983 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << HTTP/1.1 500 Internal Server Error
+81983 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << content-type: application/json; charset=UTF-8
+81983 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << connection: close
+81983 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << content-length: 3043
+81983 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << server: httpd.js
+81983 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.headers  - << date: Mon, 06 Jan 2014 15:38:12 GMT
+82075 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG http.wire  -  << "{"name":"findElement","sessionId":"75211e6b-fbe2-8f4a-b989-ee9853681786","status":26,"value":{"message":"Modal dialog present","stackTrace":[{"methodName":"nsCommandProcessor.prototype.execute","fileName":"file:///var/folders/0j/qsml8bp55pqfl2wldchnznj80000gn/T/anonymous4723262543492380223webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js","lineNumber":10899},{"methodName":"Dispatcher.executeAs/<","fileName":"file:///var/folders/0j/qsml8bp55pqfl2wldchnznj80000gn/T/anonymous4723262543492380223webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js","lineNumber":7691},{"methodName":"Resource.prototype.handle","fileName":"file:///var/folders/0j/qsml8bp55pqfl2wldchnznj80000gn/T/anonymous4723262543492380223webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js","lineNumber":7837},{"methodName":"Dispatcher.prototype.dispatch","fileName":"file:///var/folders/0j/qsml8bp55pqfl2wldchnznj80000gn/T/anonymous4723262543492380223webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js","lineNumber":7784},{"methodName":"WebDriverServer/<.handle","fileName":"file:///var/folders/0j/qsml8bp55pqfl2wldchnznj80000gn/T/anonymous4723262543492380223webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js","lineNumber":10693},{"methodName":"createHandlerFunc/<","fileName":"file:///var/folders/0j/qsml8bp55pqfl2wldchnznj80000gn/T/anonymous4723262543492380223webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js","lineNumber":1935},{"methodName":"ServerHandler.prototype.handleResponse","fileName":"file:///var/folders/0j/qsml8bp55pqfl2wldchnznj80000gn/T/anonymous4723262543492380223webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js","lineNumber":2261},{"methodName":"Connection.prototype.process","fileName":"file:///var/folders/0j/qsml8bp55pqfl2wldchnznj80000gn/T/anonymous4723262543492380223webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js","lineNumber":1168},{"methodName":"RequestReader.prototype._handleResponse","fileName":"file:///var/folders/0j/qsml8bp55pqfl2wldchnznj80000gn/T/anonymous4723262543492380223webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js","lineNumber":1616},{"methodName":"RequestReader.prototype._processBody","fileName":"file:///var/folders/0j/qsml8bp55pqfl2wldchnznj80000gn/T/anonymous4723262543492380223webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js","lineNumber":1464},{"methodName":"RequestReader.prototype.onInputStreamReady","fileName":"file:///var/folders/0j/qsml8bp55pqfl2wldchnznj80000gn/T/anonymous4723262543492380223webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js","lineNumber":1333}],"alert":{"text":"A script on this page may be busy, or it may have stopped responding. You can stop the script now, or you can continue to see if the script will complete.\n\nScript: https://9.191.66.147:9443/admin/dojo/dojo/dojo.js:15"}}}"
+82076 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64086<->127.0.0.1:7055 shut down
+82076 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+82076 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7055][null]
+82076 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64086<->127.0.0.1:7055 closed
+82076 [Forwarding findElement on session 75211e6b-fbe2-8f4a-b989-ee9853681786 to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+0 [main] DEBUG ftm.HelloWebDriver  - Log4j appender configuration is successful !!
+8634 [Forwarding newSession on session null to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+8638 [Forwarding newSession on session null to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+8639 [Forwarding newSession on session null to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+8640 [Forwarding newSession on session null to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+8641 [Forwarding newSession on session null to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+8662 [Forwarding newSession on session null to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+8703 [Forwarding newSession on session null to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+8767 [Forwarding newSession on session null to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+8767 [Forwarding newSession on session null to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+8769 [Forwarding newSession on session null to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+8770 [Forwarding newSession on session null to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+8771 [Forwarding newSession on session null to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session HTTP/1.1
+8772 [Forwarding newSession on session null to remote] DEBUG http.wire  -  >> "POST /hub/session HTTP/1.1[\r][\n]"
+8774 [Forwarding newSession on session null to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+8774 [Forwarding newSession on session null to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+8774 [Forwarding newSession on session null to remote] DEBUG http.wire  -  >> "Content-Length: 105[\r][\n]"
+8775 [Forwarding newSession on session null to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+8777 [Forwarding newSession on session null to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+8778 [Forwarding newSession on session null to remote] DEBUG http.wire  -  >> "[\r][\n]"
+8778 [Forwarding newSession on session null to remote] DEBUG http.headers  - >> POST /hub/session HTTP/1.1
+8778 [Forwarding newSession on session null to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+8780 [Forwarding newSession on session null to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+8781 [Forwarding newSession on session null to remote] DEBUG http.headers  - >> Content-Length: 105
+8782 [Forwarding newSession on session null to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+8782 [Forwarding newSession on session null to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+8785 [Forwarding newSession on session null to remote] DEBUG http.wire  -  >> "{"desiredCapabilities":{"platform":"ANY","browserName":"firefox","version":""},"requiredCapabilities":{}}"
+8869 [Forwarding newSession on session null to remote] DEBUG http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+8872 [Forwarding newSession on session null to remote] DEBUG http.wire  -  << "content-type: application/json; charset=UTF-8[\r][\n]"
+8872 [Forwarding newSession on session null to remote] DEBUG http.wire  -  << "connection: close[\r][\n]"
+8872 [Forwarding newSession on session null to remote] DEBUG http.wire  -  << "content-length: 454[\r][\n]"
+8873 [Forwarding newSession on session null to remote] DEBUG http.wire  -  << "server: httpd.js[\r][\n]"
+8873 [Forwarding newSession on session null to remote] DEBUG http.wire  -  << "date: Mon, 06 Jan 2014 15:39:25 GMT[\r][\n]"
+8873 [Forwarding newSession on session null to remote] DEBUG http.wire  -  << "[\r][\n]"
+8874 [Forwarding newSession on session null to remote] DEBUG conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+8874 [Forwarding newSession on session null to remote] DEBUG http.headers  - << HTTP/1.1 200 OK
+8874 [Forwarding newSession on session null to remote] DEBUG http.headers  - << content-type: application/json; charset=UTF-8
+8874 [Forwarding newSession on session null to remote] DEBUG http.headers  - << connection: close
+8874 [Forwarding newSession on session null to remote] DEBUG http.headers  - << content-length: 454
+8874 [Forwarding newSession on session null to remote] DEBUG http.headers  - << server: httpd.js
+8874 [Forwarding newSession on session null to remote] DEBUG http.headers  - << date: Mon, 06 Jan 2014 15:39:25 GMT
+8903 [Forwarding newSession on session null to remote] DEBUG http.wire  -  << "{"name":"newSession","sessionId":"d50df090-0ddc-7d48-9410-8e1bb8d53ca0","status":0,"value":{"cssSelectorsEnabled":true,"browserName":"firefox","handlesAlerts":true,"javascriptEnabled":true,"nativeEvents":false,"platform":"Darwin","rotatable":false,"takesScreenshot":true,"version":"24.2.0","webStorageEnabled":true,"applicationCacheEnabled":true,"databaseEnabled":true,"locationContextEnabled":true,"browserConnectionEnabled":true,"acceptSslCerts":true}}"
+8903 [Forwarding newSession on session null to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64104<->127.0.0.1:7055 shut down
+8903 [Forwarding newSession on session null to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+8903 [Forwarding newSession on session null to remote] DEBUG tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7055][null]
+8903 [Forwarding newSession on session null to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64104<->127.0.0.1:7055 closed
+8903 [Forwarding newSession on session null to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+8920 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+8921 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+8921 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+8921 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+8921 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+8921 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+8923 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+8923 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+8924 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+8924 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+8924 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+8924 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/url HTTP/1.1
+8929 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/url HTTP/1.1[\r][\n]"
+8929 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+8930 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+8935 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Content-Length: 41[\r][\n]"
+8935 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+8935 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+8935 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "[\r][\n]"
+8935 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/url HTTP/1.1
+8935 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+8935 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+8936 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Content-Length: 41
+8936 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+8936 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+8936 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "{"url":"https://9.191.66.147:9443/admin"}"
+18538 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+18539 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "content-type: application/json; charset=UTF-8[\r][\n]"
+18539 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "connection: close[\r][\n]"
+18539 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "content-length: 87[\r][\n]"
+18539 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "server: httpd.js[\r][\n]"
+18539 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "date: Mon, 06 Jan 2014 15:39:35 GMT[\r][\n]"
+18539 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "[\r][\n]"
+18540 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+18540 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << HTTP/1.1 200 OK
+18540 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << content-type: application/json; charset=UTF-8
+18540 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << connection: close
+18540 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << content-length: 87
+18540 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << server: httpd.js
+18540 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << date: Mon, 06 Jan 2014 15:39:35 GMT
+18541 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "{"name":"get","sessionId":"d50df090-0ddc-7d48-9410-8e1bb8d53ca0","status":0,"value":""}"
+18542 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64105<->127.0.0.1:7055 shut down
+18542 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+18543 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7055][null]
+18544 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64105<->127.0.0.1:7055 closed
+18544 [Forwarding get on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+18545 [main] DEBUG ftm.HelloWebDriver  - Trying to open CPS admin login page !!
+18551 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+18551 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+18551 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+18551 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+18551 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+18551 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+18553 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+18554 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+18554 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+18554 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+18554 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+18554 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element HTTP/1.1
+18554 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element HTTP/1.1[\r][\n]"
+18554 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+18554 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+18554 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Content-Length: 37[\r][\n]"
+18554 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+18555 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+18555 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "[\r][\n]"
+18555 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element HTTP/1.1
+18555 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+18555 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+18555 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Content-Length: 37
+18555 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+18555 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+18555 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "{"using":"name","value":"j_username"}"
+18620 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+18622 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "content-type: application/json; charset=UTF-8[\r][\n]"
+18622 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "connection: close[\r][\n]"
+18622 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "content-length: 145[\r][\n]"
+18622 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "server: httpd.js[\r][\n]"
+18622 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "date: Mon, 06 Jan 2014 15:39:35 GMT[\r][\n]"
+18623 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "[\r][\n]"
+18623 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+18623 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << HTTP/1.1 200 OK
+18623 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << content-type: application/json; charset=UTF-8
+18623 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << connection: close
+18623 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << content-length: 145
+18623 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << server: httpd.js
+18623 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << date: Mon, 06 Jan 2014 15:39:35 GMT
+18624 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "{"name":"findElement","sessionId":"d50df090-0ddc-7d48-9410-8e1bb8d53ca0","status":0,"value":{"ELEMENT":"{9b7d6ca6-4304-da49-896a-21b2b4918a2f}"}}"
+18624 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64114<->127.0.0.1:7055 shut down
+18624 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+18624 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7055][null]
+18624 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64114<->127.0.0.1:7055 closed
+18625 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+18634 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+18634 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+18634 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+18634 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+18634 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+18634 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+18641 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+18641 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+18641 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+18642 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+18642 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+18642 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element HTTP/1.1
+18642 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element HTTP/1.1[\r][\n]"
+18642 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+18642 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+18643 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Content-Length: 37[\r][\n]"
+18643 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+18643 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+18643 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "[\r][\n]"
+18643 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element HTTP/1.1
+18643 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+18643 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+18643 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Content-Length: 37
+18643 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+18643 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+18643 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "{"using":"name","value":"j_password"}"
+18658 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+18658 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "content-type: application/json; charset=UTF-8[\r][\n]"
+18659 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "connection: close[\r][\n]"
+18659 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "content-length: 145[\r][\n]"
+18659 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "server: httpd.js[\r][\n]"
+18659 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "date: Mon, 06 Jan 2014 15:39:35 GMT[\r][\n]"
+18659 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "[\r][\n]"
+18660 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+18660 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << HTTP/1.1 200 OK
+18660 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << content-type: application/json; charset=UTF-8
+18660 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << connection: close
+18660 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << content-length: 145
+18660 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << server: httpd.js
+18660 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << date: Mon, 06 Jan 2014 15:39:35 GMT
+18660 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "{"name":"findElement","sessionId":"d50df090-0ddc-7d48-9410-8e1bb8d53ca0","status":0,"value":{"ELEMENT":"{0335af34-2d15-2844-b3a5-89f7a3f4b3c5}"}}"
+18661 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64115<->127.0.0.1:7055 shut down
+18661 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+18661 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7055][null]
+18661 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64115<->127.0.0.1:7055 closed
+18661 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+18663 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+18663 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+18663 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+18664 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+18664 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+18664 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+18669 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+18670 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+18670 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+18670 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+18670 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+18670 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element HTTP/1.1
+18670 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element HTTP/1.1[\r][\n]"
+18670 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+18670 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+18670 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Content-Length: 32[\r][\n]"
+18671 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+18671 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+18671 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "[\r][\n]"
+18671 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element HTTP/1.1
+18671 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+18671 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+18671 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Content-Length: 32
+18671 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+18671 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+18671 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "{"using":"name","value":"login"}"
+18683 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+18683 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "content-type: application/json; charset=UTF-8[\r][\n]"
+18683 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "connection: close[\r][\n]"
+18683 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "content-length: 145[\r][\n]"
+18683 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "server: httpd.js[\r][\n]"
+18683 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "date: Mon, 06 Jan 2014 15:39:35 GMT[\r][\n]"
+18684 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "[\r][\n]"
+18684 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+18684 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << HTTP/1.1 200 OK
+18684 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << content-type: application/json; charset=UTF-8
+18684 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << connection: close
+18684 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << content-length: 145
+18684 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << server: httpd.js
+18684 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << date: Mon, 06 Jan 2014 15:39:35 GMT
+18685 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "{"name":"findElement","sessionId":"d50df090-0ddc-7d48-9410-8e1bb8d53ca0","status":0,"value":{"ELEMENT":"{6173df02-38ab-c84c-88a7-929fc0eecb30}"}}"
+18685 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64116<->127.0.0.1:7055 shut down
+18685 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+18685 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7055][null]
+18685 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64116<->127.0.0.1:7055 closed
+18685 [Forwarding findElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+18690 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+18690 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+18690 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+18690 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+18690 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+18691 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+18694 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+18694 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+18694 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+18694 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+18694 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+18694 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element/%7B9b7d6ca6-4304-da49-896a-21b2b4918a2f%7D/value HTTP/1.1
+18695 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element/%7B9b7d6ca6-4304-da49-896a-21b2b4918a2f%7D/value HTTP/1.1[\r][\n]"
+18695 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+18695 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+18695 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Content-Length: 68[\r][\n]"
+18695 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+18695 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+18695 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "[\r][\n]"
+18695 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element/%7B9b7d6ca6-4304-da49-896a-21b2b4918a2f%7D/value HTTP/1.1
+18695 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+18695 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+18696 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Content-Length: 68
+18696 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+18696 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+18696 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "{"id":"{9b7d6ca6-4304-da49-896a-21b2b4918a2f}","value":["izhadmin"]}"
+18755 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+18755 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "content-type: application/json; charset=UTF-8[\r][\n]"
+18755 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "connection: close[\r][\n]"
+18755 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "content-length: 101[\r][\n]"
+18755 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "server: httpd.js[\r][\n]"
+18755 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "date: Mon, 06 Jan 2014 15:39:35 GMT[\r][\n]"
+18756 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "[\r][\n]"
+18756 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+18756 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << HTTP/1.1 200 OK
+18756 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << content-type: application/json; charset=UTF-8
+18756 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << connection: close
+18756 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << content-length: 101
+18757 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << server: httpd.js
+18757 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << date: Mon, 06 Jan 2014 15:39:35 GMT
+18768 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "{"name":"sendKeysToElement","sessionId":"d50df090-0ddc-7d48-9410-8e1bb8d53ca0","status":0,"value":""}"
+18768 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64117<->127.0.0.1:7055 shut down
+18768 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+18769 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7055][null]
+18769 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64117<->127.0.0.1:7055 closed
+18769 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+18770 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+18770 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+18771 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+18771 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+18771 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+18771 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+18772 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+18772 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+18772 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+18772 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+18772 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+18773 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element/%7B0335af34-2d15-2844-b3a5-89f7a3f4b3c5%7D/value HTTP/1.1
+18773 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element/%7B0335af34-2d15-2844-b3a5-89f7a3f4b3c5%7D/value HTTP/1.1[\r][\n]"
+18773 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+18773 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+18773 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Content-Length: 68[\r][\n]"
+18773 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+18774 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+18774 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "[\r][\n]"
+18774 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element/%7B0335af34-2d15-2844-b3a5-89f7a3f4b3c5%7D/value HTTP/1.1
+18774 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+18774 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+18774 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Content-Length: 68
+18774 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+18774 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+18775 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "{"id":"{0335af34-2d15-2844-b3a5-89f7a3f4b3c5}","value":["wb1forfn"]}"
+18833 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+18833 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "content-type: application/json; charset=UTF-8[\r][\n]"
+18833 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "connection: close[\r][\n]"
+18833 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "content-length: 101[\r][\n]"
+18833 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "server: httpd.js[\r][\n]"
+18833 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "date: Mon, 06 Jan 2014 15:39:35 GMT[\r][\n]"
+18833 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "[\r][\n]"
+18833 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+18833 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << HTTP/1.1 200 OK
+18833 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << content-type: application/json; charset=UTF-8
+18834 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << connection: close
+18834 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << content-length: 101
+18834 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << server: httpd.js
+18834 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - << date: Mon, 06 Jan 2014 15:39:35 GMT
+18834 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  << "{"name":"sendKeysToElement","sessionId":"d50df090-0ddc-7d48-9410-8e1bb8d53ca0","status":0,"value":""}"
+18834 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64118<->127.0.0.1:7055 shut down
+18835 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Released connection is not reusable.
+18835 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Releasing connection [{}->http://127.0.0.1:7055][null]
+18835 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Connection 0.0.0.0:64118<->127.0.0.1:7055 closed
+18835 [Forwarding sendKeysToElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Notifying no-one, there are no waiting threads
+18836 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ThreadSafeClientConnManager  - Get connection: {}->http://127.0.0.1:7055, timeout = 120000
+18836 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - [{}->http://127.0.0.1:7055] total kept alive: 0, total issued: 0, total allocated: 0 out of 2000
+18837 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - No free connections [{}->http://127.0.0.1:7055][null]
+18837 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Available capacity: 2000 out of 2000 [{}->http://127.0.0.1:7055][null]
+18837 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG tsccm.ConnPoolByRoute  - Creating new connection [{}->http://127.0.0.1:7055]
+18837 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnectionOperator  - Connecting to 127.0.0.1:7055
+18838 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestAddCookies  - CookieSpec selected: best-match
+18838 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestAuthCache  - Auth cache not set in the context
+18839 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+18839 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+18839 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG client.DefaultHttpClient  - Attempt 1 to execute request
+18839 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG conn.DefaultClientConnection  - Sending request: POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element/%7B6173df02-38ab-c84c-88a7-929fc0eecb30%7D/submit HTTP/1.1
+18839 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element/%7B6173df02-38ab-c84c-88a7-929fc0eecb30%7D/submit HTTP/1.1[\r][\n]"
+18839 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Accept: application/json, image/png[\r][\n]"
+18839 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+18839 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Content-Length: 47[\r][\n]"
+18839 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Host: 127.0.0.1:7055[\r][\n]"
+18840 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+18840 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "[\r][\n]"
+18840 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> POST /hub/session/d50df090-0ddc-7d48-9410-8e1bb8d53ca0/element/%7B6173df02-38ab-c84c-88a7-929fc0eecb30%7D/submit HTTP/1.1
+18840 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Accept: application/json, image/png
+18840 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Content-Type: application/json; charset=utf-8
+18840 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Content-Length: 47
+18840 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Host: 127.0.0.1:7055
+18840 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.headers  - >> Connection: Keep-Alive
+18840 [Forwarding submitElement on session d50df090-0ddc-7d48-9410-8e1bb8d53ca0 to remote] DEBUG http.wire  -  >> "{"id":"{6173df02-38ab-c84c-88a7-929fc0eecb30}"}"
