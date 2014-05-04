@@ -20,6 +20,10 @@ repositories {
     mavenCentral()
 }
 
+task wrapper(type: Wrapper) {
+	gradleVersion = '1.12'
+}
+
 // In this section you declare the dependencies for your production and test code
 dependencies {
     runtime fileTree(dir: 'lib', include: '*.jar')
@@ -49,6 +53,10 @@ sourceSets {
             srcDir 'src/resources'
         }
     }
+}
+
+task hello() {
+    println "hello"
 }
 
 mainClassName = "net.jimmyliao.selenium.HelloWebDriver"
