@@ -5,6 +5,7 @@ import org.apache.log4j.xml.DOMConfigurator;
 
 import java.util.List;
 
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,6 +21,12 @@ public class HelloWebDriver {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+        HelloWebDriver testObj = new HelloWebDriver();
+        testObj.test01();
+	}
+    
+    @Test
+    public void test01() {
         DOMConfigurator.configure("./log4j-config.xml");
         logger.debug("Log4j appender configuration is successful !!");
 
@@ -66,8 +73,7 @@ public class HelloWebDriver {
 
         logger.debug("Test Completed.");
 
-        driver.quit();
-
-	}
+        driver.quit();    	
+    }
 
 }

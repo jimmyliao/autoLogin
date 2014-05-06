@@ -40,7 +40,7 @@ dependencies {
     // TestNG is also supported by the Gradle Test task. Just change the
     // testCompile dependency to testCompile 'org.testng:testng:6.8.1' and add
     // 'test.useTestNG()' to your build script.
-    testCompile "junit:junit:4.11"
+    compile "junit:junit:4.11"
 }
 
 // Default Source Sets: src/main/java/packageName
@@ -56,11 +56,16 @@ sourceSets {
     }
 }
 */
-task hello() {
-    println "hello"
-}
 
 mainClassName = "net.jimmyliao.selenium.HelloWebDriver"
 // gradle clean
 // gradle build
 // gradle run
+
+test {
+    // Default test task scan src/test/*, need to replace
+	// For Building Jar, excludes all unit tests
+    //exclude '**'
+    testClassesDir = sourceSets.main.output.classesDir
+    //include 'com/ibm/ftm/cps/gui/login/LOGIN_01.class'    
+}
