@@ -44,6 +44,7 @@ dependencies {
 }
 
 // Default Source Sets: src/main/java/packageName
+/*
 sourceSets {
     main {
         java {
@@ -54,7 +55,7 @@ sourceSets {
         }
     }
 }
-
+*/
 task hello() {
     println "hello"
 }
